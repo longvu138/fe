@@ -19,8 +19,8 @@ export const HeaderCustom: React.FC<Props> = ({ title }) => {
     const {
         token: { colorBgContainer },
     } = theme.useToken()
-    const userLogin = localStore.getJson('userInfo')?.username
-    
+    const userLogin = localStore.getJson("userInfo")
+
     const onLogout = () => {
         location.href = "/"
         localStorage.removeItem("loginSession")
@@ -62,14 +62,17 @@ export const HeaderCustom: React.FC<Props> = ({ title }) => {
               mode="horizontal"
               items={items}
             /> */}
-                        <Divider type="vertical" />
-                        <Dropdown menu={{ items }}>
-                            <div>
-                                <Space>
-                                    <Avatar />
-                                    <div className="font-medium">{userLogin}</div>
-                                </Space>
-                            </div>
+                        {/* <Divider type="vertical" /> */}
+                        <Dropdown
+                            menu={{ items }}
+                            className="cursor-pointer">
+                            <Space>
+                                <Avatar
+                                    size={40}
+                                    src={userLogin?.avatar}
+                                />
+                                <div className="font-medium">{userLogin?.username}</div>
+                            </Space>
                         </Dropdown>
                     </Space>
                 </Col>
