@@ -1,0 +1,39 @@
+{
+    "order_list": {
+        "check_all": "Select All"
+    },
+    "login": {
+        "logout_btn": "Logout",
+        "notPermission": "Sorry. you don't have permission to access this page."
+    },
+    "message": {
+        "success": "Successful",
+        "fail": "Failure",
+        "loading": "Loading",
+        "redirect": "Redirecting",
+        "error": "An error occurred, please try again",
+        "loginFail": "Login fail",
+        "logging": "Logging in",
+        "authenticating": "Authenticating, please wait",
+        "sessionExpired": "Session expired. Please refresh your browser",
+        "serverEncountered": "The server encountered an error. Please try again later"
+    },
+    "error": {
+        "error404": "The page you are trying to access does not exist",
+        "not_found": "Oops! Page not found"
+    },
+    "setting": {
+        "time_zone": "Time zone",
+        "select_timezone": "Select the time zone"
+    },
+    "menu": {
+        "dashboard": "Dashboard",
+        "management": "Management"
+    },
+    "title": {
+        "default": "Transportation Management System"
+    },
+    "button": {
+        "goHome": "Go home"
+    }
+}

@@ -1,0 +1,22 @@
+key,en,vn
+order_list.check_all,Select All,Chọn tất cả
+login.logout_btn,Logout,Đăng xuất
+login.notPermission,Sorry. you don't have permission to access this page.,Xin lỗi. Bạn không có quyền truy cập trang này.
+message.success,Successful,Thành công
+message.fail,Failure,Không thành công
+message.loading,Loading,Đang tải
+error.error404,The page you are trying to access does not exist,Trang bạn truy cập không tồn tại
+error.not_found,Oops! Page not found,Rất tiếc! Không tìm thấy trang
+setting.time_zone,Time zone,Thời gian theo khu vực
+setting.select_timezone,Select the time zone,Lựa chọn múi giờ
+menu.dashboard,Dashboard,Thống kê
+title.default,Transportation Management System,Hệ thống quản lý vận tải
+menu.management,Management,Quản lý
+button.goHome,Go home,Về trang chủ
+message.redirect,Redirecting,Đang chuyển hướng
+message.error,"An error occurred, please try again","Có lỗi xảy ra, vui lòng thử lại"
+message.loginFail,Login fail,Không thể đăng nhập
+message.logging,Logging in,Đang tiến hành đăng nhập vui lòng chờ trong giây lát
+message.authenticating,"Authenticating, please wait","Đang kiểm tra xác thực, vui lòng đợi"
+message.sessionExpired,Session expired. Please refresh your browser,Phiên làm việc hết hạn. Vui lòng làm mới trình duyệt
+message.serverEncountered,The server encountered an error. Please try again later,Máy chủ gặp sự cố. Vui lòng thử lại sau

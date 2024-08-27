@@ -1,0 +1,39 @@
+{
+    "order_list": {
+        "check_all": "Chọn tất cả"
+    },
+    "login": {
+        "logout_btn": "Đăng xuất",
+        "notPermission": "Xin lỗi. Bạn không có quyền truy cập trang này."
+    },
+    "message": {
+        "success": "Thành công",
+        "fail": "Không thành công",
+        "loading": "Đang tải",
+        "redirect": "Đang chuyển hướng",
+        "error": "Có lỗi xảy ra, vui lòng thử lại",
+        "loginFail": "Không thể đăng nhập",
+        "logging": "Đang tiến hành đăng nhập vui lòng chờ trong giây lát",
+        "authenticating": "Đang kiểm tra xác thực, vui lòng đợi",
+        "sessionExpired": "Phiên làm việc hết hạn. Vui lòng làm mới trình duyệt",
+        "serverEncountered": "Máy chủ gặp sự cố. Vui lòng thử lại sau"
+    },
+    "error": {
+        "error404": "Trang bạn truy cập không tồn tại",
+        "not_found": "Rất tiếc! Không tìm thấy trang"
+    },
+    "setting": {
+        "time_zone": "Thời gian theo khu vực",
+        "select_timezone": "Lựa chọn múi giờ"
+    },
+    "menu": {
+        "dashboard": "Thống kê",
+        "management": "Quản lý"
+    },
+    "title": {
+        "default": "Hệ thống quản lý vận tải"
+    },
+    "button": {
+        "goHome": "Về trang chủ"
+    }
+}
