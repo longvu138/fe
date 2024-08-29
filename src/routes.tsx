@@ -4,6 +4,7 @@ import { Notfound } from "@/components"
 import { Login } from "@/containers"
 import { authenticatedLoader } from "./config/Authentication"
 import { Register } from "./containers/Register/Register"
+import Verify from "./containers/Verify/Verify"
 
 const AppRoutes = () => {
     const router = createBrowserRouter([
@@ -23,6 +24,10 @@ const AppRoutes = () => {
             path: "/register",
             element: <Register />,
         },
+        {
+          path: "/verify",
+          element: <Verify />,
+      },
         {
             path: "/logout",
             element: (

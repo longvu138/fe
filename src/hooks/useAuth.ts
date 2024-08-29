@@ -19,11 +19,10 @@ export const useLogin = () => {
                 navigate("/")
             },
             onError: (error: any) => {
-                console.error(error)
                 const err = _.get(error, "response.data.message")
                 notification.error({
-                    message: "Đã có lỗi xảy ra",
-                    description: err || "Đăng nhập không thành công",
+                    message: err|| "Đã có lỗi xảy ra",
+                    // description: err || "Đăng nhập không thành công",
                     key: "err",
                     duration: 3,
                 })
@@ -37,7 +36,6 @@ export const useLogin = () => {
 
 export const useRegister = () => {
     const queryClient = useQueryClient()
-    const navigate = useNavigate()
     return useMutation(
         async (body: TRegister) => {
             const res = await UserApi.register(body)
@@ -45,18 +43,9 @@ export const useRegister = () => {
         },
         {
             onSuccess: () => {
-                // notification.success({
-                //     message: "Thành Công",
-                //     description: "Đăng ký tài khoản thành công",
-                //     key: "success",
-                //     duration: 2,
-                // })
-                // setTimeout(() => {
-                //     navigate("/login")
-                // }, 2000)
+                
             },
             onError: (error: any) => {
-                console.error(error)
                 const err = _.get(error, "response.data.message")
                 notification.error({
                     message: "Đã có lỗi xảy ra",
@@ -69,5 +58,34 @@ export const useRegister = () => {
                 queryClient.invalidateQueries("user")
             },
         },
+    )
+}
+
+
+export const useVerifyOTP = () => {
+    const queryClient = useQueryClient()
+    return useMutation(
+        async (body: TVerify) => {
+            const res = await UserApi.verifyOTP(body)
+            return res.data
+        },
+        // {
+        //     onSuccess: () => {
+                
+        //     },
+        //     onError: (error: any) => {
+        //         console.error(error)
+        //         const err = _.get(error, "response.data.message")
+        //         notification.error({
+        //             message: "Đã có lỗi xảy ra",
+        //             description: err || "Đăng ký không thành công vui lòng thử lại!",
+        //             key: "err",
+        //             duration: 3,
+        //         })
+        //     },
+        //     onSettled: () => {
+        //         queryClient.invalidateQueries("user")
+        //     },
+        // },
     )
 }

@@ -1,7 +1,6 @@
 import appConfig from "@/config/app"
 import { useRegister } from "@/hooks/useAuth"
 import { Button, Form, Input, notification } from "antd"
-import axios from "axios"
 import { useState } from "react"
 import { Link, useNavigate } from "react-router-dom"
 
@@ -20,14 +19,13 @@ export const Register = () => {
         setLoading(true)
         registerMutation.mutate(values, {
             onSuccess: (data) => {
-                console.log("Logged in user details in component:", data)
                 notification.success({
                     message: "Thành Công",
                     description: "Đăng ký tài khoản thành công",
                     key: "success",
-                    duration: 2,
+                    duration: 4,
                 })
-                navigate("/verify")
+                navigate(`/verify?email=${data?.data?.email}`)
             },
             onSettled: () => {
                 setLoading(false)
@@ -49,7 +47,7 @@ export const Register = () => {
                 autoComplete="off"
                 layout="vertical">
                 <Form.Item<FieldType>
-                    label="email"
+                    label="Email"
                     name="email"
                     rules={[{ required: true, type: "email", message: "Vui lòng nhập email" }]}>
                     <Input

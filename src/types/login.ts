@@ -8,3 +8,8 @@ type TRegister = {
     password: string
     username: string
 }
+
+type TVerify = {
+    email: string
+    otp: string
+}

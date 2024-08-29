@@ -15,6 +15,11 @@ export default class UserApi {
     }
 
     static register(body: TRegister) {
-      return ApiClientNoToken.post("/register", body)
-  }
+        return ApiClientNoToken.post("/register", body)
+    }
+
+    static verifyOTP(body: TVerify) {
+        return ApiClientNoToken.post("/verifyAccount", body)
+
+    }
 }
